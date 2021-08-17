@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <title>Portifolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Free HTML5 Template plus Photoshop design">
+    <meta name="keywords" content="free html template, portfolio, html5, sass, jquery">
+    <meta name="author" content="Bucky Maler">
+    <link rel="stylesheet" href="{% static 'appportifolio/css/main.css' %}">
+</head>
+
+<body>
+
+    <!-- SECTION: Splashscreen -->
+    <div class="splashscreen">
+        <div class="preloader">
+            <span class="preloader__text">Loading</span>
+        </div>
+    </div>
+    <!-- END SECTION: Splashscreen -->
+    <!-- SECTION: Navigation -->
+    <div id="top" class="navigation">
+        <div class="navigation__wrapper wrapper--large">
+            <a class="navigation__logo logo" href="#0">DL</a>
+            <nav class="navigation__container">
+                <ul class="navigation__list">
+                    <li><a href="#0">Inicio</a></li>
+                    <li><a href="#work">Portfolio</a></li>
+                    <!-- <li><a href="#blog">Blog</a></li> -->
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <a class="navigation__cta button" href="#0">Faça uma cotação</a>
+            <div class="navigation__burger">
+                <span class="navigation__burger-el navigation__burger-el--top"></span>
+                <span class="navigation__burger-el navigation__burger-el--middle"></span>
+                <span class="navigation__burger-el navigation__burger-el--bottom"></span>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION: Navigation -->
+    <!-- SECTION: Intro -->
+    <header class="header">
+        <div class="introduction">
+            <h1 class="introduction__content">
+                <span class="introduction__content-el introduction__content-el--name">Douglas Lima</span>
+                <span class="introduction__content-el introduction__content-el--description">Criativo</span>
+                <span class="introduction__content-el introduction__content-el--job">Profissional</span>
+            </h1>
+            <svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65"
+                xml:space="preserve" enable-background="new 0 0 130 65">
+                <g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)">
+                    <path
+                        d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z" />
+                </g>
+            </svg>
+        </div>
+    </header>
+    <!-- END SECTION: Intro -->
+    <main role="main">
+        <!-- SECTION: About -->
+        <section class="about">
+            <div class="about__wrapper wrapper--small">
+                <p class="text_filho" style="
+                justify-content: center;
+                margin: 10%;">Sou um jovem que gosta de aprender e ensinar sou bastante comunicativo e gosto de
+                    fazer amizades<br>
+                    Nas horas livres gosto de estudar, assistir anime, falar com minha familia e ler<br>
+                    Gosto de viajar conhecer lugares novos mas o que me faz bem sao lugares com aventuras. </p>
+                <div class="about__content">
+                    <div class="about__content-blurb blurb blurb--framed">
+                        <h2 class="blurb__heading">Nada é<br>impossível</h2>
+                        <p class="blurb__copy no-margin">Se você trabalhar duro o suficiente para isso</p>
+                    </div>
+                    <p class="about__content-signature">Douglas Lima</p>
+                </div>
+
+                <!-- <img class="about__visual" src=" {% static 'appportifolio/img/about-visual.png' %} " alt="James Martin"> -->
+            </div>
+        </section>
+        <!-- END SECTION: About -->
+        <!-- SECTION: App Design -->
+        <section class="app-design">
+            <div class="app-design__wrapper wrapper--large">
+                <div class="app-design__content blurb">
+                    <h2 class="blurb__heading">Automação de <br>Aplicativos</h2>
+                    <p class="blurb__copy blurb__copy--tight">Crio aplicativos para automatizar processos e tarefas
+                        repetitivas</p>
+                    <a class="transform-link" href="#0">Confirir</a>
+                </div>
+            </div>
+            <figure class="app-design__visual"></figure>
+        </section>
+        <!-- END SECTION: App Design -->
+        <!-- SECTION: Web Design -->
+        <section class="web-design">
+            <div class="web-design__wrapper wrapper--small">
+                <div class="web-design__content blurb">
+                    <h2 class="blurb__heading">Web <br>Sites</h2>
+                    <p class="blurb__copy blurb__copy--tight">Confira alguns dos projetos que tenho no meu reposotório
+                    </p>
+                    <a class="transform-link" href="#0">Conferir</a>
+                </div>
+            </div>
+            <figure class="web-design__visual"></figure>
+        </section>
+        <!-- END SECTION: Web Design -->
+        <!-- SECTION: Work -->
+        <section id="work" class="work">
+            <h2 class="work__heading title">Últimos Projetos</h2>
+            <div class="work__wrapper wrapper--large">
+                <ul class="work__list">
+                    <li class="work__list-el work__list-el--is-active">
+                        <div class="work__content">
+                            <div class="work__content-blurb blurb blurb--framed">
+                                <h3 class="blurb__heading">Aplicação<br>Tarefa<br>Investimentos</h3>
+                                <p class="blurb__copy">Um aplicativo para organizar suas tarefas.</p>
+                            </div>
+                            <a class="transform-link" href="https://dashboard.heroku.com/apps/invistaapp">Ver projeto
+                                Completo</a>
+                        </div>
+                        <div class="work__visual">
+                            <img src="{% static 'appportifolio/img/1-projeto.jpg' %}" alt="Strategik INC">
+                        </div>
+                    </li>
+                    <li class="work__list-el">
+                        <div class="work__content">
+                            <div class="work__content-blurb blurb blurb--framed">
+                                <h3 class="blurb__heading">Automação<br>Buscar Preço</h3>
+                                <p class="blurb__copy">Automatizei a busca de menores preços no mercado Livre.</p>
+                            </div>
+                            <a class="transform-link" href="https://github.com/Hermelio/mercado-livre-bot">Ver projeto
+                                Completo</a>
+                        </div>
+                        <div class="work__visual">
+                            <img src="{% static 'appportifolio/img/bot-mercado.png'%}" alt="Ēostre UI Kit">
+                        </div>
+                    </li>
+                    <li class="work__list-el">
+                        <div class="work__content">
+                            <div class="work__content-blurb blurb blurb--framed">
+                                <h3 class="blurb__heading">Agenda<br>Sem Interface</h3>
+                                <p class="blurb__copy">Criei uma agenda feita toda em python sem interface gráfica.</p>
+                            </div>
+                            <a class="transform-link" href="#0">Ver projeto Completo</a>
+                        </div>
+                        <div class="work__visual">
+                            <img src="{% static 'appportifolio/img/agenda.png'%}" alt="Go Outside App">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="work__navigation">
+                    <li class="work__navigation-el work__navigation-el--is-active"></li>
+                    <li class="work__navigation-el"></li>
+                    <li class="work__navigation-el"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- END SECTION: Work -->
+        <!-- SECTION: Blog -->
+        <!-- <section id="blog" class="blog">
+            <h2 class="blog__heading title">Blog Posts</h2>
+            <div class="blog__wrapper wrapper--large">
+                <article class="blog__post">
+                    <div class="blog__post-thumbnail">
+                        <img src="{% static 'appportifolio/img/blog-post-1.jpg'%}" alt="Man viewing work plans">
+                    </div>
+                    <div class="blog__post-excerpt">
+                        <h3>Dias no escritório</h3>
+                        <p>I love using UI Kits vs website templates because UI Kits give you an easier way to use
+                            elements compared to templates.</p>
+                        <a class="transform-link"
+                            href="https://github.com/Hermelio/Agenda-Python/tree/master/SemInterfaceGrafica">Read full
+                            article</a>
+                    </div>
+                </article>
+                <article class="blog__post">
+                    <div class="blog__post-thumbnail">
+                        <img src="{% static 'appportifolio/img/blog-post-2.jpg'%}" alt="Man hanging pictures">
+                    </div>
+                    <div class="blog__post-excerpt">
+                        <h3>Why I use CCO images</h3>
+                        <p>CCO images are awesome because you don't have to credit the author, and you can use them
+                            anywhere, anytime.</p>
+                        <a class="transform-link" href="#0">Read full article</a>
+                    </div>
+                </article>
+                <article class="blog__post">
+                    <div class="blog__post-thumbnail">
+                        <img src="{% static 'appportifolio/img/blog-post-3.jpg'%}" alt="Men working at a desk">
+                    </div>
+                    <div class="blog__post-excerpt">
+                        <h3>Designing for IOT</h3>
+                        <p>Internet of things is coming so quickly, we as designers will have to design UI and UX for
+                            more things in the future.</p>
+                        <a class="transform-link" href="#0">Read full article</a>
+                    </div>
+                </article> -->
+        <!-- </div>
+        <div class="blog__view-more">
+            <a class="button blog__view-more--el" href="#0">View More</a>
+        </div> -->
+        </section>
+        <!-- END SECTION: Blog -->
+        <!-- SECTION: Contact -->
+        <section id="contact" class="contact">
+            <h2 class="contact__heading title">Entre em Contato</h2>
+            <div class="contact__wrapper wrapper--large">
+                <div class="contact__visual">
+                    <img src="{% static 'appportifolio/img/localizacao.png'%}" alt="Douglas Lima location">
+                </div>
+                <!-- Simple form setup: formspree.io -->
+                <form class="contact__form">
+                    <input class="contact__form-el contact__form-el--name" type="text" placeholder="Seu Nome"
+                        spellcheck="false">
+                    <input class="contact__form-el contact__form-el--email" type="email" placeholder="Seu Email"
+                        spellcheck="false">
+                    <textarea class="contact__form-el contact__form-el--message" placeholder="Sua Mensagem"></textarea>
+                    <input class="contact__form-el contact__form-el--submit" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+        <!-- END SECTION: Contact -->
+    </main>
+    <!-- SECTION: Footer -->
+    <footer class="footer">
+        <div class="footer__wrapper wrapper--large">
+            <p class="footer__copyright no-margin">&copy; 2021 Douglas Lima</p>
+            <a class="footer__logo logo" href="#0">DL</a>
+            <a class="footer__arrow" href="#top">
+                <svg class="footer__arrow-el" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0"
+                    viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65">
+                    <g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)">
+                        <path
+                            d="M315.4 365c-336-305-345-315-290-351 18-12 32-14 45-8 10 5 145 123 300 262l281 253 196-178c108-98 237-215 287-260 50-46 98-83 107-83s27 9 40 19c20 16 22 23 14 46 -12 33-623 585-647 585C638.4 650 489.4 522 315.4 365z" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <!-- END SECTION: Footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- jQuery local fallback -->
+    <script>window.jQuery || document.write('<script src="appportifolio/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+    <script src="{% static 'appportifolio/js/functions-min.js'%}"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID and uncomment -->
+    <!--
+	<script>
+	(function(b, o, i, l, e, r) {
+		b.GoogleAnalyticsObject = l;
+		b[l] || (b[l] =
+			function() {
+				(b[l].q = b[l].q || []).push(arguments)
+			});
+		b[l].l = +new Date;
+		e = o.createElement(i);
+		r = o.getElementsByTagName(i)[0];
+		e.src = '//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e, r)
+	}(window, document, 'script', 'ga'));
+	ga('create', 'UA-XXXXX-X', 'auto');
+	ga('send', 'pageview');
+	</script>
+	-->
+</body>
+
+</html>
